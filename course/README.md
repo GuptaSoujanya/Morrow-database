@@ -22,12 +22,12 @@ python3 serve.py 8000
 
 Then open **http://localhost:8000** in your browser. (`serve.py` is a tiny wrapper around Python's built-in server that disables browser caching, so edits always show up on refresh. It always serves its own folder, so `python3 path/to/course/serve.py` works from any directory. Any static server works too; internet is needed once per session for CDN assets and for live news. If another app is already using a port, pick a different number, e.g. `python3 serve.py 8899`.)
 
-Or open it from the dashboard (`scripts/morrow start` in the folder above this one, then http://127.0.0.1:8100): its **Study** section shows today's module from the 8-week plan and every module by track, lets you mark modules read, and serves this site at http://127.0.0.1:8100/course/.
+Or open it from the dashboard (`scripts/morrow start` in your Morrow checkout, which clones this repo to `database/`, then http://127.0.0.1:8100): its **Study** section shows today's module from the 8-week plan and every module by track, lets you mark modules read, and serves this site at http://127.0.0.1:8100/course/.
 
 - **[Live AI & Tech News](./news.md)** — fetches today's AI/tech headlines from the internet (Hacker News + dev.to) right inside the site.
 - **[Latest AI Trends 2025–26](./04-ml-genai-agents/11-latest-ai-trends.md)** — curated, interview-ready summary of what changed recently.
 
-To publish it free on the internet: copy just this folder into its own GitHub repository and enable **GitHub Pages** (the `.nojekyll` file is already included). Never publish the folder above it: that is the job bots' repository.
+This folder is its own public repository, [Morrow-database](https://github.com/GuptaSoujanya/Morrow-database), so enabling **GitHub Pages** on it publishes the site for free (the `.nojekyll` file is already included). Personal data never belongs here: it lives in each person's private Morrow-user repo.
 
 ---
 
